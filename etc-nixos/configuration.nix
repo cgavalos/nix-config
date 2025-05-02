@@ -145,6 +145,7 @@
       neovim
       kcalc
       go
+      gzdoom
     ];
   };
 
