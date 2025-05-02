@@ -144,6 +144,7 @@
       dislocker
       neovim
       kcalc
+      go
     ];
   };
 
