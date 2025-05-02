@@ -82,6 +82,17 @@
   # Use ZSH
   programs.zsh.enable = true;
 
+  # Enable Docker Daemon
+  virtualisation.docker.enable = true;
+
+  # Install Steam
+  programs.steam = {
+    enable = true;
+    remotePlay.openFirewall = true; # Open ports in the firewall for Steam Remote Play
+    dedicatedServer.openFirewall = true; # Open ports in the firewall for Source Dedicated Server
+    localNetworkGameTransfers.openFirewall = true; # Open ports in the firewall for Steam Local Network Game Transfers
+  };
+
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.gil = {
     isNormalUser = true;
@@ -93,6 +104,24 @@
       git
       vim
       librewolf
+      vscode
+      godot_4
+      anki
+      keepassxc
+      arduino-ide
+      calibre
+      discord
+      docker
+      freecad
+      gimp
+      chromium
+      jetbrains-toolbox
+      obsidian
+      libreoffice
+      qbittorrent
+      rpi-imager
+      cura
+      vlc
     #  thunderbird
     ];
   };
