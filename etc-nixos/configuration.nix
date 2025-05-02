@@ -139,6 +139,7 @@
     #  thunderbird
       podman-desktop
       podman
+      ckan
     ];
   };
 
