@@ -142,6 +142,8 @@
       ckan
       gnome-disk-utility
       dislocker
+      neovim
+      kcalc
     ];
   };
 
