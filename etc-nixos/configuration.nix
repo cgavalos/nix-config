@@ -140,6 +140,7 @@
       podman-desktop
       podman
       ckan
+      gnome-disk-utility
     ];
   };
 
