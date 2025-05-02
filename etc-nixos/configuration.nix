@@ -88,6 +88,7 @@
       kdePackages.kate
       git
       vim
+      librewolf
     #  thunderbird
     ];
   };
