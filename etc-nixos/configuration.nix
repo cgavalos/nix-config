@@ -123,6 +123,8 @@
       # cura Python package currently broken
       vlc
     #  thunderbird
+      podman-desktop
+      podman
     ];
   };
 
