@@ -126,6 +126,17 @@
     ];
   };
 
+  # Add Flatpak
+  services.flatpak.enable = true;
+  # Add Flathub
+  systemd.services.flatpak-repo = {
+    wantedBy = [ "multi-user.target" ];
+    path = [ pkgs.flatpak ];
+    script = ''
+      flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+    '';
+  };
+
   # Install firefox.
   # programs.firefox.enable = true;
 
