@@ -120,7 +120,7 @@
       libreoffice
       qbittorrent
       rpi-imager
-      cura
+      # cura Python package currently broken
       vlc
     #  thunderbird
     ];
