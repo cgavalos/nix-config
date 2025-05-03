@@ -147,6 +147,7 @@
       go
       gzdoom
       mission-center
+      gnome-boxes
     ];
   };
 
