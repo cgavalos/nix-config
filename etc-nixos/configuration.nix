@@ -111,7 +111,7 @@
   users.users.gil = {
     isNormalUser = true;
     description = "Carlos Gilberto Avalos";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "libvirtd" ];
     shell = pkgs.zsh;
     packages = with pkgs; [
       kdePackages.kate
@@ -149,6 +149,22 @@
       mission-center
       gnome-boxes
     ];
+  };
+
+  virtualisation.libvirtd = {
+    enable = true;
+    qemu = {
+      package = pkgs.qemu_kvm;
+      runAsRoot = true;
+      swtpm.enable = true;
+      ovmf = {
+        enable = true;
+        packages = [(pkgs.OVMF.override {
+          secureBoot = true;
+          tpmSupport = true;
+        }).fd];
+      };
+    };
   };
 
   # Add Flatpak
