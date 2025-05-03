@@ -146,6 +146,7 @@
       kcalc
       go
       gzdoom
+      mission-center
     ];
   };
 
