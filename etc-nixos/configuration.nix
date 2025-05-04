@@ -148,6 +148,7 @@
       gzdoom
       mission-center
       gnome-boxes
+      handbrake
     ];
   };
 
