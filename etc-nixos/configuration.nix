@@ -116,7 +116,6 @@
     packages = with pkgs; [
       kdePackages.kate
       git
-      vim
       librewolf
       vscode
       godot_4
