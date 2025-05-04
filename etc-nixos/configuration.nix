@@ -148,6 +148,7 @@
       mission-center
       gnome-boxes
       handbrake
+      libdvdcss
     ];
   };
 
