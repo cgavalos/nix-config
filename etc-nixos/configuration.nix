@@ -171,6 +171,9 @@
 
       # native wayland support (unstable)
       wineWowPackages.waylandFull
+
+      kdePackages.audiocd-kio
+      kdePackages.k3b
     ];
   };
 
