@@ -148,6 +148,7 @@
       gnome-boxes
       handbrake
       libdvdcss
+      yt-dlp
     ];
   };
 
