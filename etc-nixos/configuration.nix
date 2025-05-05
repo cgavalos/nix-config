@@ -141,7 +141,7 @@
       gnome-disk-utility
       dislocker
       neovim
-      kcalc
+      gnome-calculator
       go
       gzdoom
       mission-center
