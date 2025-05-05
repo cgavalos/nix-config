@@ -134,7 +134,7 @@
       rpi-imager
       # cura Python package currently broken
       vlc
-    #  thunderbird
+      thunderbird
       dvdisaster
       podman-desktop
       podman
