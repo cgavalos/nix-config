@@ -135,6 +135,7 @@
       # cura Python package currently broken
       vlc
     #  thunderbird
+      dvdisaster
       podman-desktop
       podman
       ckan
