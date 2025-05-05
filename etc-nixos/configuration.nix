@@ -114,7 +114,6 @@
     extraGroups = [ "networkmanager" "wheel" "libvirtd" ];
     shell = pkgs.zsh;
     packages = with pkgs; [
-      kdePackages.kate
       git
       librewolf
       vscode
