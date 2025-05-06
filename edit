@@ -1,0 +1,2 @@
+#!/run/current-system/sw/bin/zsh
+/etc/profiles/per-user/gil/bin/nvim etc-nixos/configuration.nix
