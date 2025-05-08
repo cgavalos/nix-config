@@ -83,21 +83,21 @@
   programs.zsh.enable = true;
 
   # Enable Docker Daemon in rootless mode
-  virtualisation.docker = {
-    enable = true;
-    rootless = {
-      enable = true;
-      setSocketVariable = true;
-    };
-  };
-  systemd.user.services.rootless-docker = {
-    description = "Enables Rootless Docker";
-    serviceConfig.PassEnvironment = "DISPLAY";
-    script = ''
-      systemctl --user enable --now docker
-    '';
-    wantedBy = [ "multi-user.target" ]; # starts after login
-  };
+  # virtualisation.docker = {
+  #   enable = true;
+  #   rootless = {
+  #     enable = true;
+  #     setSocketVariable = true;
+  #   };
+  # };
+  # systemd.user.services.rootless-docker = {
+  #   description = "Enables Rootless Docker";
+  #   serviceConfig.PassEnvironment = "DISPLAY";
+  #   script = ''
+  #     systemctl --user enable --now docker
+  #   '';
+  #   wantedBy = [ "multi-user.target" ]; # starts after login
+  # };
 
   # Install Steam
   programs.steam = {
@@ -123,7 +123,7 @@
       arduino-ide
       calibre
       discord
-      docker
+      # docker
       freecad
       gimp
       chromium
@@ -178,6 +178,7 @@
     ];
   };
 
+  # For GNOME Boxes
   virtualisation.libvirtd = {
     enable = true;
     qemu = {
