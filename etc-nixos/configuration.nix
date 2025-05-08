@@ -15,7 +15,7 @@
   boot.loader.efi.canTouchEfiVariables = true;
 
   boot.initrd.luks.devices."luks-15b2978b-c92c-4b14-92ee-4caa8c32de00".device = "/dev/disk/by-uuid/15b2978b-c92c-4b14-92ee-4caa8c32de00";
-  networking.hostName = "nixos"; # Define your hostname.
+  networking.hostName = "bigbox"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
   # Configure network proxy if necessary
