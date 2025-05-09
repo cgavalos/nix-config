@@ -13,6 +13,7 @@
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
+  boot.kernelParams = [ "nomodeset" ];
 
   boot.initrd.luks.devices."luks-15b2978b-c92c-4b14-92ee-4caa8c32de00".device = "/dev/disk/by-uuid/15b2978b-c92c-4b14-92ee-4caa8c32de00";
   networking.hostName = "bigbox"; # Define your hostname.
